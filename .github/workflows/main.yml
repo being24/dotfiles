@@ -3,8 +3,8 @@ name: main
 on: [push]
 
 jobs:
-  main:
-    runs-on: [ubuntu-latest, ubuntu-20.04]
+  build:
+    runs-on: [ubuntu-18.04, ubuntu-20.04]
     steps:
       - uses: actions/checkout@v1
       - name: install dotfiles
