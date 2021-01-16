@@ -5,6 +5,7 @@ on: [push]
 jobs:
   build:
     name: Initial_setting ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-18.04, ubuntu-20.04]
