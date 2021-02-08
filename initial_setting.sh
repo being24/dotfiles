@@ -1,3 +1,5 @@
+cd ~
+
 LANG=C xdg-user-dirs-gtk-update
 
 sudo sed -i.bak -e "s%http://jp.archive.ubuntu.com/ubuntu/%http://ftp.jaist.ac.jp/pub/Linux/ubuntu/%g" /etc/apt/sources.list
