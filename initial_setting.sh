@@ -40,7 +40,7 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 
 bash-it enable completion docker docker-compose docker-machine git pip3 ssh tmux
 
-echo alias cat='bat' >> .bashrc
+echo alias cat='batcat' >> .bashrc
 echo alias fd='fdfind' >> .bashrc
 echo alias ls='exa' >> .bashrc
 sed -i -e 's/bobby/pure/g' ~/.bashrc
