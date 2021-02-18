@@ -9,7 +9,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install git xclip tmux -y
 
 # git にユーザー名とemailを追加
-git config user.name "being"
+git config --global user.name "being"
 git config --global user.email "34680324+being24@users.noreply.github.com"
 
 sudo apt-get install python-pip python2.7 python2.7-dev python3
