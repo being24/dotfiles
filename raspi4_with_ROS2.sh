@@ -6,6 +6,10 @@ LANG=C xdg-user-dirs-gtk-update
 
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove -y
 
+# sshの有効化、avahi-daemonのインストール
+sudo apt install openssh-server
+sudo apt install avahi-daemon
+
 # 基本のアプリケーションのインストール
 sudo apt-get install git xclip tmux -y
 
@@ -41,10 +45,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable pigpiod.service
 
 cd ~
-
-# sshの有効化、avahi-daemonのインストール
-sudo apt indtsll openssh-server
-sudo apt install avahi-daemon
 
 # i2cのインストール
 sudo apt install i2c-tools python3-smbus –y
