@@ -4,17 +4,17 @@ cd ~
 # デフォルトファイルの英語化
 LANG=C xdg-user-dirs-gtk-update
 
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove -y
+sudo apt-get update  -y && sudo apt-get upgrade  -y && sudo apt-get autoremove -y
 
 # sshの有効化、avahi-daemonのインストール
-sudo apt install openssh-server
-sudo apt install avahi-daemon
+sudo apt-get install –y install openssh-server
+sudo apt-get install –y avahi-daemon
 
 # 基本のアプリケーションのインストール
-sudo apt-get install git xclip tmux -y
+sudo apt-get install –y git xclip tmux curl htop
 
 # git にユーザー名とemailを追加
-git config user.name "being"
+git config --global user.name "being"
 git config --global user.email "34680324+being24@users.noreply.github.com"
 
 # .bashrcのバックアップ
@@ -25,11 +25,13 @@ curl https://getmic.ro | bash
 sudo mv micro /usr/local/bin
 
 # batcatのインストール
-sudo apt-get install bat –y
+curl -L https://github.com/sharkdp/bat/releases/download/v0.18.1/bat_0.18.1_arm64.deb > bat.deb
+sudo dpkg -i bat.deb
+sudo rm bat.deb
 echo alias cat='batcat' >> .bashrc
 
 # pythonのインストール
-sudo apt-get install python3 python3-pip python3-setuptools
+sudo apt-get install python3 python3-pip python3-setuptools -y
 
 # pigpioのインストール
 wget https://github.com/joan2937/pigpio/archive/master.zip
@@ -47,18 +49,20 @@ sudo systemctl enable pigpiod.service
 cd ~
 
 # i2cのインストール
-sudo apt install i2c-tools python3-smbus –y
-sudo adduser ubuntu i2c
+sudo apt-get install –y i2c-tools python3-smbus
+sudo adduser being i2c
 
 # codeのインストール
 wget -O code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64"
 sudo dpkg -i code.deb
 
-sudo apt-get install dkms linux-headers-`uname -r`
+# xpadneoのインストール
+sudo apt-get install -y dkms linux-headers-`uname -r`
 git clone https://github.com/atar-axis/xpadneo.git
 cd xpadneo
 sudo ./install.sh
 
+cd ~
 source ~/.bashrc
 
 # /etc/bluetooth/main.confを編集 https://atar-axis.github.io/xpadneo/#troubleshooting
@@ -67,4 +71,9 @@ source ~/.bashrc
 # ControllerMode=dual
 
 # HDMIの順位の変更
+# /boot/firmware/usercfg.txtに以下の内容を追記する
+# hdmi_force_hotplug=1
+# hdmi_group=2
+# hdmi_mode=82
+
 # ROS2のインストール
