@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: install dotfiles
-        run: bash initial_setting.sh
+        run: bash ubuntu_initial_setting.sh
