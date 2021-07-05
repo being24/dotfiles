@@ -77,3 +77,5 @@ source ~/.bashrc
 # hdmi_mode=82
 
 # ROS2のインストール
+# sudo apt install python3-colcon-common-extensions python3-rosdep python3-argcomplete
+
