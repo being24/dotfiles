@@ -1,4 +1,4 @@
-# ディレクターの移動
+# ディレクトリの移動
 cd ~
 
 # デフォルトファイルの英語化
@@ -7,11 +7,11 @@ LANG=C xdg-user-dirs-gtk-update
 sudo apt-get update  -y && sudo apt-get upgrade  -y && sudo apt-get autoremove -y
 
 # sshの有効化、avahi-daemonのインストール
-sudo apt-get install –y install openssh-server
-sudo apt-get install –y avahi-daemon
+sudo apt-get install openssh-server –y
+sudo apt-get install avahi-daemon –y
 
 # 基本のアプリケーションのインストール
-sudo apt-get install –y git xclip tmux curl htop
+sudo apt-get install git xclip tmux curl htop –y
 
 # git にユーザー名とemailを追加
 git config --global user.name "being"
@@ -49,8 +49,7 @@ sudo systemctl enable pigpiod.service
 cd ~
 
 # i2cのインストール
-sudo apt-get install –y i2c-tools python3-smbus
-sudo adduser being i2c
+sudo apt-get install i2c-tools python3-smbus –y
 
 # codeのインストール
 wget -O code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64"
@@ -77,3 +76,6 @@ source ~/.bashrc
 # hdmi_mode=82
 
 # ROS2のインストール
+# sudo apt install python3-colcon-common-extensions python3-rosdep2 python3-argcomplete
+
+
