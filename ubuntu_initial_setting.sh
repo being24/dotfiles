@@ -23,12 +23,6 @@ sudo cp .bashrc .bashrc.origin
 
 #batのインストール
 sudo apt-get install bat -y
-mkdir -p ~/.local/bin
-ln -s /usr/bin/batcat ~/.local/bin/bat
-
-# bash it 入れる
-git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-~/.bash_it/install.sh
 
 # alacrittyのインストール
 # 設定のclone + シンボリックリンク
@@ -36,7 +30,7 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 
 # alacritty-colorscheme -V apply solarized_dark.yamlをできるようにする
 
-bash-it enable completion docker docker-compose docker-machine git pip3 ssh tmux
+# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 echo alias cat='batcat' >> .bashrc
 source ~/.bashrc
