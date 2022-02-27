@@ -16,6 +16,7 @@ sudo apt-get install git xclip tmux curl htop –y
 # git にユーザー名とemailを追加
 git config --global user.name "being"
 git config --global user.email "34680324+being24@users.noreply.github.com"
+git config --global core.quotepath false
 
 # .bashrcのバックアップ
 sudo cp .bashrc .bashrc.origin
