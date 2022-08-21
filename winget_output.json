@@ -57,6 +57,15 @@
 				},
 				{
 					"PackageIdentifier": "Alacritty.Alacritty"
+				},
+				{
+					"PackageIdentifier": "Adobe.AdobeAcrobatReaderDC"
+				},
+				{
+					"PackageIdentifier": "Valve.Steam"
+				},
+				{
+					"PackageIdentifier": "Balena.Etcher"
 				}
 			],
 			"SourceDetails": {
