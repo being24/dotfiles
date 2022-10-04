@@ -1,5 +1,5 @@
 bandit==1.7.4
 black==22.6.0
 flake8==3.8.4
-mypy==0.971
+mypy==0.982
 pep8-naming==0.13.2
