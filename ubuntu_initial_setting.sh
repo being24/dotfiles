@@ -2,11 +2,10 @@ cd ~
 
 LANG=C xdg-user-dirs-gtk-update
 
-sudo sed -i.bak -e "s%http://jp.archive.ubuntu.com/ubuntu/%http://ftp.jaist.ac.jp/pub/Linux/ubuntu/%g" /etc/apt/sources.list
 sudo apt-get update && sudo apt-get upgrade -y
 
 # gitのインストール
-sudo apt-get install git xclip curl fcitx-mozc -y
+sudo apt-get install git -y
 
 # git にユーザー名とemailを追加
 git config --global user.name "being"
@@ -39,8 +38,8 @@ echo alias cat='batcat' >> .bashrc
 # cica フォントのインストール
 mkdir cica
 cd cica
-curl -L -O https://github.com/miiton/Cica/releases/download/v5.0.2/Cica_v5.0.2_with_emoji.zip
-unzip Cica_v5.0.2_with_emoji.zip
+curl -L -O https://github.com/miiton/Cica/releases/download/v5.0.3/Cica_v5.0.3.zip
+unzip Cica_v5.0.3.zip
 sudo mkdir  /usr/share/fonts/truetype/cica
 sudo cp *.ttf /usr/share/fonts/truetype/cica/
 sudo fc-cache -vf
@@ -89,4 +88,20 @@ echo '[ -z "$ZELLIJ" ] && zellij' >> ~/.bashrc
 
 . ~/.bashrc
 
-# code chrome
+
+# code
+
+# GPGキーをダウンロード(配布先のものが改ざん等がないかを確認するための公開鍵)
+# apt-key add にて信頼できるキーとして登録
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+
+# microsoftのリポジトリをaptリポジトリに追加
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+# リポジトリの更新 & インストール
+sudo apt update
+sudo apt install -y code
+
+# chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
