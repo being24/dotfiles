@@ -24,7 +24,7 @@
   </section>
   <section name="behavior">
     <key name="defaultmode" value="0" />
-    <key name="defmodeascii" value="0" />
+    <key name="defmodeascii" value="1" />
     <key name="begincvokuri" value="1" />
     <key name="precedeokuri" value="1" />
     <key name="shiftnnokuri" value="0" />
@@ -123,7 +123,7 @@
     <key name="jlatin" value="" />
     <key name="ascii" value="" />
     <key name="jmode" value="" />
-    <key name="abbrev" value="A" />
+    <key name="abbrev" value="" />
     <key name="affix" value="&lt;|>" />
     <key name="nextcand" value="" />
     <key name="prevcand" value="" />
@@ -152,7 +152,7 @@
     <key name="jlatin" value="" />
     <key name="ascii" value="" />
     <key name="jmode" value="" />
-    <key name="abbrev" value="" />
+    <key name="abbrev" value="C\xBA" />
     <key name="affix" value="" />
     <key name="nextcand" value="\x20" />
     <key name="prevcand" value="S\x20" />
