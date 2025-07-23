@@ -14,10 +14,7 @@
 					"PackageIdentifier": "7zip.7zip"
 				},
 				{
-					"PackageIdentifier": "Audacity.Audacity"
-				},
-				{
-					"PackageIdentifier": "dbeaver.dbeaver"
+					"PackageIdentifier": "DBeaver.DBeaver.Community"
 				},
 				{
 					"PackageIdentifier": "Discord.Discord"
@@ -29,19 +26,10 @@
 					"PackageIdentifier": "Mozilla.Thunderbird"
 				},
 				{
-					"PackageIdentifier": "OBSProject.OBSStudio"
-				},
-				{
-					"PackageIdentifier": "TeraTermProject.teraterm"
-				},
-				{
 					"PackageIdentifier": "SlackTechnologies.Slack"
 				},
 				{
 					"PackageIdentifier": "Google.JapaneseIME"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VC++2012Redist-x86"
 				},
 				{
 					"PackageIdentifier": "Microsoft.VisualStudioCode"
@@ -50,22 +38,10 @@
 					"PackageIdentifier": "Google.Chrome"
 				},
 				{
-					"PackageIdentifier": "Microsoft.PowerShell"
-				},
-				{
-					"PackageIdentifier": "Adobe.Acrobat.Reader.64-bit"
-				},
-				{
-					"PackageIdentifier": "Alacritty.Alacritty"
-				},
-				{
-					"PackageIdentifier": "Adobe.AdobeAcrobatReaderDC"
-				},
-				{
-					"PackageIdentifier": "Valve.Steam"
-				},
-				{
 					"PackageIdentifier": "Balena.Etcher"
+				},
+				{
+					"PackageIdentifier": "GitHub.cli"
 				}
 			],
 			"SourceDetails": {
