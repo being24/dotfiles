@@ -42,6 +42,9 @@
 				},
 				{
 					"PackageIdentifier": "GitHub.cli"
+				},
+				{
+					"PackageIdentifier": "Docker.DockerDesktop"
 				}
 			],
 			"SourceDetails": {
