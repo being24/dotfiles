@@ -2,10 +2,12 @@ cd ~
 
 LANG=C xdg-user-dirs-gtk-update
 
+#aptリポジトリの更新
+sudo sed -i.bak -r 's@http://(jp\.)?archive\.ubuntu\.com/ubuntu/?@https://ftp.udx.icscoe.jp/Linux/ubuntu/@g' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt-get update && sudo apt-get upgrade -y
 
 # gitのインストール
-sudo apt-get install git -y
+sudo apt-get install git gh -y
 
 # git にユーザー名とemailを追加
 git config --global user.name "being"
