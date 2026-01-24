@@ -45,6 +45,18 @@
 				},
 				{
 					"PackageIdentifier": "Docker.DockerDesktop"
+				},
+				{
+					"PackageIdentifier": "RazerInc.RazerInstaller.Synapse4"
+				},
+				{
+					"PackageIdentifier": "Logitech.GHUB"
+				},
+				{
+					"PackageIdentifier": "dorssel.usbipd-win"
+				},
+				{
+					"PackageIdentifier": "Notion.NotionCalendar"
 				}
 			],
 			"SourceDetails": {
